@@ -335,6 +335,60 @@ mvn spring-boot:run
 
 - 后端接口基址：`http://localhost:8080/api`
 - Swagger 文档：`http://localhost:8080/api/swagger-ui/index.html`
+提交信息 
+update README.md.
+扩展信息
+此处可填写为什么修改，做了什么样的修改，以及开发的思路等更加详细的提交信息。（相当于 Git Commit message 的 Body）
+Signed-off-by: springmeng <mengchuan666@163.com> 更换邮箱
+目标分支
+master
+ 取消
+Gitee - 基于 Git 的代码托管和研发协作平台
+北京奥思研工智能科技有限公司版权所有
+Git 大全
+Git 命令学习
+CopyCat 代码克隆检测
+APP与插件下载
+ 
+Gitee 封面人物
+GVP 项目
+Gitee 博客
+Gitee 公益计划
+Gitee 持续集成
+ 
+OpenAPI
+MCP Server
+帮助文档
+在线自助服务
+更新日志
+ 
+关于我们
+加入我们
+使用条款
+意见建议
+合作伙伴
+ 
+技术交流QQ群
+技术交流QQ群
+
+ 
+微信服务号
+微信服务号
+
+ client@oschina.cn
+ 企业版在线使用：400-606-0201
+专业版私有部署：
+赖经理 13058176526
+开放原子开源基金会
+开放原子开源基金会
+合作代码托管平台
+违法和不良信息举报中心
+违法和不良信息举报中心
+京ICP备2025119063号
+京公网安备11011502039387号
+京公网安备11011502039387号
+ 简 体 / 繁 體 / English
+
 
 ### 3️⃣ 启动前端
 
@@ -372,6 +426,11 @@ AI_AGENT_LANGCHAIN_BASE_URL=http://127.0.0.1:8090
 ![输入图片说明](pictures/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-05-22_165228_951.png)
 
 ![输入图片说明](pictures/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-05-22_165221_767.png)
+
+![输入图片说明](pictures/11.png)
+
+![输入图片说明](pictures/22.png)
+
 
 ---
 
@@ -478,16 +537,9 @@ AI_AGENT_LANGCHAIN_BASE_URL=http://127.0.0.1:8090
 
 ## 🧪 开源学习建议
 
-如果你准备把项目发布到 Gitee，建议同步补充以下内容：
 
-- 项目演示截图
-- 演示视频链接
-- 一键部署说明
-- 许可证文件 `LICENSE`
-- 常见问题 `FAQ`
-- 接口测试截图或 Swagger 截图
 
-这样仓库展示效果会更完整，也更适合其他人学习和复现。
+欢迎学习，这个项目技术栈非常全，非常多。学习技术完全没问题。建议实操一把。
 
 ---
 
