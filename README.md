@@ -29,7 +29,9 @@
 - `ai-agent-service`：可选的 Python FastAPI + LangChain/LangGraph 智能体服务
 - `sql`：数据库初始化脚本与 AI 扩展表脚本
 
-如果你想将项目开源到 Gitee，当前这份 README 已经按开源展示方式整理，适合直接作为仓库首页介绍文档使用。
+项目技术架构图：
+
+![输入图片说明](pictures/ScreenShot_2026-05-22_164939_435.png)
 
 ---
 
@@ -158,32 +160,7 @@
 
 ### 🧭 系统架构
 
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                        前端展示层                            │
-│         Vue 3 + Vite + Element Plus + Pinia + Router        │
-└──────────────────────────────────────────────────────────────┘
-                              │
-                              │ HTTP / JSON
-                              ▼
-┌──────────────────────────────────────────────────────────────┐
-│                        后端业务层                            │
-│ Spring Boot 3 + Controller + Service + Security + AI Tools  │
-└──────────────────────────────────────────────────────────────┘
-              │                     │                     │
-              │                     │                     │
-              ▼                     ▼                     ▼
-     ┌──────────────┐      ┌────────────────┐     ┌────────────────┐
-     │   MySQL 8    │      │ Spring AI / MCP │     │  uploads 文件  │
-     │  业务数据存储 │      │ RAGFlow / Dify │     │   图片资源目录  │
-     └──────────────┘      └────────────────┘     └────────────────┘
-                                                   
-                              ▼
-                    ┌────────────────────┐
-                    │ ai-agent-service   │
-                    │ FastAPI + LangChain│
-                    └────────────────────┘
-```
+![输入图片说明](pictures/ScreenShot_2026-05-22_164831_758.png)
 
 ### 🧱 后端分层说明
 
@@ -245,33 +222,19 @@
 
 ### 🏠 首页展示
 
-```md
-![首页截图](docs/images/home.png)
-```
+![输入图片说明](pictures/ScreenShot_2026-05-15_154240_376.png)
 
 ### 👤 用户端页面
 
-```md
-![用户中心](docs/images/user-profile.png)
-![设备列表](docs/images/drone-list.png)
-![订单详情](docs/images/order-detail.png)
-```
+![输入图片说明](pictures/ScreenShot_2026-05-22_165206_253.png)
 
 ### 🛠️ 管理端页面
 
-```md
-![管理后台-首页](docs/images/admin-dashboard.png)
-![无人机管理](docs/images/admin-drones.png)
-![订单管理](docs/images/admin-orders.png)
-```
+![输入图片说明](pictures/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-05-22_165213_806.png)
 
-### 🤖 AI 助手页面
+### 🤖 AI 助手页面-带上下文翻译和记忆功能
 
-```md
-![AI 助手](docs/images/ai-assistant.png)
-```
-
----
+![输入图片说明](pictures/640.png)
 
 ## 🚀 部署介绍
 
@@ -403,6 +366,12 @@ uv run uvicorn app.main:app --host 0.0.0.0 --port 8090
 AI_AGENT_MODE=langchain
 AI_AGENT_LANGCHAIN_BASE_URL=http://127.0.0.1:8090
 ```
+
+🚀更详细的技术文档：
+
+![输入图片说明](pictures/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-05-22_165228_951.png)
+
+![输入图片说明](pictures/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-05-22_165221_767.png)
 
 ---
 
