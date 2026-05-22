@@ -1,0 +1,116 @@
+// =====================================================
+// 翱翔无人机租赁系统 - 主题变量
+// 风格：Clean Light SaaS
+// =====================================================
+
+// ================= 颜色系统 =================
+
+// 主背景色 - 浅色系
+$slate-900: #ffffff;
+$slate-800: #ffffff;
+$slate-700: #f1f5f9;
+$slate-600: #e2e8f0;
+$slate-500: #94a3b8;
+$slate-400: #64748b;
+$slate-300: #475569;
+$slate-200: #334155;
+$slate-100: #1e293b;
+
+// 品牌色 - Electric Blue
+$electric-blue: #3b82f6;
+$electric-blue-light: #60a5fa;
+$electric-blue-dark: #2563eb;
+$electric-cyan: #0ea5e9;
+
+// 状态色
+$neon-success: #22c55e;
+$neon-success-light: #4ade80;
+$neon-success-glow: rgba(34, 197, 94, 0.15);
+
+$neon-warning: #f59e0b;
+$neon-warning-light: #fbbf24;
+$neon-warning-glow: rgba(245, 158, 11, 0.15);
+
+$neon-error: #ef4444;
+$neon-error-light: #f87171;
+$neon-error-glow: rgba(239, 68, 68, 0.15);
+
+$neon-info: #3b82f6;
+$neon-info-light: #60a5fa;
+$neon-info-glow: rgba(59, 130, 246, 0.15);
+
+// 文字颜色
+$text-primary: #0f172a;
+$text-secondary: #475569;
+$text-muted: #94a3b8;
+$text-dark: #0f172a;
+
+// ================= 间距系统 =================
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+$spacing-3xl: 64px;
+
+// ================= 圆角系统 =================
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 20px;
+$radius-2xl: 24px;
+$radius-3xl: 28px;  // 主要使用
+
+// ================= 阴影系统 =================
+// 柔和阴影
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.03);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.03);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.08), 0 8px 10px rgba(0, 0, 0, 0.03);
+
+// 品牌阴影
+$shadow-glow-blue: 0 4px 14px rgba(59, 130, 246, 0.15);
+$shadow-glow-cyan: 0 4px 14px rgba(14, 165, 233, 0.15);
+
+// ================= 卡片/面板背景 =================
+$glass-bg: rgba(255, 255, 255, 0.9);
+$glass-bg-light: rgba(241, 245, 249, 0.7);
+$glass-border: rgba(226, 232, 240, 0.8);
+$glass-blur: 12px;
+
+// ================= 字体系统 =================
+$font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 30px;
+$font-size-4xl: 36px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// ================= 动画 =================
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// ================= 断点 =================
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// ================= Element Plus 变量覆盖 =================
+$--color-primary: $electric-blue;
+$--color-success: $neon-success;
+$--color-warning: $neon-warning;
+$--color-danger: $neon-error;
+$--color-info: $neon-info;

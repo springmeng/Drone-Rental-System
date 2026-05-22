@@ -1,0 +1,264 @@
+// =====================================================
+// 翱翔无人机租赁系统 - 全局样式
+// =====================================================
+
+// 注意：变量已通过 vite.config.js 的 additionalData (@import) 自动注入
+
+// ================= Element Plus CSS 变量覆盖 =================
+:root {
+  // 主色
+  --el-color-primary: #{$electric-blue};
+  --el-color-primary-light-3: #{$electric-blue-light};
+  --el-color-primary-light-5: #{rgba($electric-blue, 0.5)};
+  --el-color-primary-light-7: #{rgba($electric-blue, 0.3)};
+  --el-color-primary-light-9: #{rgba($electric-blue, 0.1)};
+  --el-color-primary-dark-2: #{$electric-blue-dark};
+
+  // 状态色
+  --el-color-success: #{$neon-success};
+  --el-color-warning: #{$neon-warning};
+  --el-color-danger: #{$neon-error};
+  --el-color-info: #{$slate-500};
+
+  // 背景色
+  --el-bg-color: #ffffff;
+  --el-bg-color-overlay: #f8fafc;
+  --el-bg-color-page: #f1f5f9;
+
+  // 文字色
+  --el-text-color-primary: #{$text-primary};
+  --el-text-color-regular: #{$text-secondary};
+  --el-text-color-secondary: #{$text-muted};
+  --el-text-color-placeholder: #94a3b8;
+
+  // 边框色
+  --el-border-color: #e2e8f0;
+  --el-border-color-light: #{rgba(226, 232, 240, 0.8)};
+  --el-border-color-lighter: #{rgba(226, 232, 240, 0.5)};
+
+  // 填充色
+  --el-fill-color: #f1f5f9;
+  --el-fill-color-light: #f8fafc;
+  --el-fill-color-lighter: #fafbfc;
+  --el-fill-color-blank: #ffffff;
+
+  // 圆角
+  --el-border-radius-base: #{$radius-md};
+  --el-border-radius-small: #{$radius-sm};
+  --el-border-radius-round: #{$radius-3xl};
+
+  // 字体
+  --el-font-family: #{$font-family};
+}
+
+// ================= 重置样式 =================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  color: $text-primary;
+  background-color: #f5f7fa;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: $electric-blue;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $electric-blue-light;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ================= 滚动条样式 =================
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+
+  &:hover {
+    background: #94a3b8;
+  }
+}
+
+// ================= 工具类 =================
+
+// 文字颜色
+.text-primary { color: $text-primary !important; }
+.text-secondary { color: $text-secondary !important; }
+.text-muted { color: $text-muted !important; }
+.text-brand { color: $electric-blue !important; }
+.text-success { color: $neon-success !important; }
+.text-warning { color: $neon-warning !important; }
+.text-error { color: $neon-error !important; }
+
+// 背景色
+.bg-slate-900 { background-color: #f5f7fa !important; }
+.bg-slate-800 { background-color: #ffffff !important; }
+.bg-slate-700 { background-color: #f1f5f9 !important; }
+.bg-glass {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur($glass-blur);
+}
+
+// 文字大小
+.text-xs { font-size: $font-size-xs !important; }
+.text-sm { font-size: $font-size-sm !important; }
+.text-base { font-size: $font-size-base !important; }
+.text-lg { font-size: $font-size-lg !important; }
+.text-xl { font-size: $font-size-xl !important; }
+.text-2xl { font-size: $font-size-2xl !important; }
+.text-3xl { font-size: $font-size-3xl !important; }
+.text-4xl { font-size: $font-size-4xl !important; }
+
+// 文字权重
+.font-normal { font-weight: $font-weight-normal !important; }
+.font-medium { font-weight: $font-weight-medium !important; }
+.font-semibold { font-weight: $font-weight-semibold !important; }
+.font-bold { font-weight: $font-weight-bold !important; }
+
+// 间距
+.p-0 { padding: 0 !important; }
+.p-sm { padding: $spacing-sm !important; }
+.p-md { padding: $spacing-md !important; }
+.p-lg { padding: $spacing-lg !important; }
+.p-xl { padding: $spacing-xl !important; }
+
+.m-0 { margin: 0 !important; }
+.m-sm { margin: $spacing-sm !important; }
+.m-md { margin: $spacing-md !important; }
+.m-lg { margin: $spacing-lg !important; }
+.m-xl { margin: $spacing-xl !important; }
+
+.mb-sm { margin-bottom: $spacing-sm !important; }
+.mb-md { margin-bottom: $spacing-md !important; }
+.mb-lg { margin-bottom: $spacing-lg !important; }
+.mb-xl { margin-bottom: $spacing-xl !important; }
+
+.mt-sm { margin-top: $spacing-sm !important; }
+.mt-md { margin-top: $spacing-md !important; }
+.mt-lg { margin-top: $spacing-lg !important; }
+.mt-xl { margin-top: $spacing-xl !important; }
+
+// Flexbox
+.flex { display: flex !important; }
+.flex-col { flex-direction: column !important; }
+.flex-wrap { flex-wrap: wrap !important; }
+.items-center { align-items: center !important; }
+.items-start { align-items: flex-start !important; }
+.items-end { align-items: flex-end !important; }
+.justify-center { justify-content: center !important; }
+.justify-between { justify-content: space-between !important; }
+.justify-end { justify-content: flex-end !important; }
+.gap-sm { gap: $spacing-sm !important; }
+.gap-md { gap: $spacing-md !important; }
+.gap-lg { gap: $spacing-lg !important; }
+
+// Grid
+.grid { display: grid !important; }
+
+// ================= 卡片基础样式 =================
+.glass-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: $radius-3xl;
+  box-shadow: $shadow-md;
+}
+
+// ================= 品牌效果 =================
+.glow-blue {
+  box-shadow: $shadow-glow-blue;
+}
+
+.glow-success {
+  box-shadow: 0 4px 14px $neon-success-glow;
+}
+
+.glow-warning {
+  box-shadow: 0 4px 14px $neon-warning-glow;
+}
+
+.glow-error {
+  box-shadow: 0 4px 14px $neon-error-glow;
+}
+
+// ================= 动画 =================
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity $transition-base;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all $transition-base;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+// ================= 页面容器 =================
+.page-container {
+  padding: $spacing-lg;
+  min-height: calc(100vh - 64px);
+}
+
+.page-title {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-bold;
+  color: $text-primary;
+  margin-bottom: $spacing-lg;
+}
+
+.page-subtitle {
+  font-size: $font-size-sm;
+  color: $text-secondary;
+  margin-top: $spacing-xs;
+}
+
+// ================= 响应式 =================
+@media (max-width: $breakpoint-md) {
+  .page-container {
+    padding: $spacing-md;
+  }
+
+  .page-title {
+    font-size: $font-size-xl;
+  }
+}
