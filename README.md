@@ -494,7 +494,8 @@ AI_AGENT_LANGCHAIN_BASE_URL=http://127.0.0.1:8090
 ## 📄 License
 
 本项目适合用于学习交流、课程设计、毕业设计参考与功能扩展。  
-如果你准备正式开源，建议在仓库中补充 `MIT` 或你需要的开源许可证文件。
+
+star支持，更详细的资料和更详细的文档不断更新中。
 
 ---
 
@@ -502,20 +503,16 @@ AI_AGENT_LANGCHAIN_BASE_URL=http://127.0.0.1:8090
 
 感谢以下开源技术生态：
 
-- Spring Boot
-- MyBatis-Plus
-- Spring AI
-- Vue 3
-- Vite
-- Element Plus
-- Pinia
-- ECharts
+- [www.javaclimb.com](http://www.javaclimb.com)
+- [www.pdxmw.com](http://www.pdxmw.com)
+- 程序员小孟
+- 王铭浩
 
 ---
 
 <div align="center">
 
 
-**如果这个项目对你有帮助，欢迎在 Gitee 点个 Star。**
+**如果这个项目对你有帮助，欢迎在 Gitee 点个 Star。这是对我最大支持。**
 
 </div>
